@@ -50,6 +50,7 @@ gulp.task('js', function () {
     .src([
       'node_modules/slick-carousel/slick/slick.js',
       'node_modules/fullpage.js/dist/fullpage.js',
+      'node_modules/fullpage.js/vendors/scrolloverflow.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
